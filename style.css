@@ -1,0 +1,814 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 100vh;
+}
+h1, h2{
+  font-size: 1.5em;
+  margin: 30px auto;
+  color: white;
+  background-color: #3d1d0e;
+  padding:20px 30px;
+  font-family: 'Montserrat', sans-serif;
+  display: table;
+}
+h3{
+  font-size: 1.3em;
+  margin: 30px;
+  background-color:#3d1d0e;
+  padding:20px 30px;
+  font-family: 'Montserrat', sans-serif;
+  display: table;
+}
+p{
+  font-size: 1em;
+  text-align: left;
+  padding:20px;
+  line-height: 1.5;
+}
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+a {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+button:hover{
+  -webkit-transform:scale(1.1);
+      -ms-transform:scale(1.1);
+          transform:scale(1.1);
+}
+button:focus, a:focus{
+  outline: none;
+}
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  }
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url('img/godiva-pattern.png');
+  background-color: #f8e7b7;
+}
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75%;
+  margin: 0 auto;
+}
+section.godiva-header{
+  height: 75vh;
+  background-position: center;
+  background-image: url("img/godiva-background-chocolate.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-shadow: inset 0px -52px 46px -46px rgb(24 9 9);
+              box-shadow: inset 0px -52px 46px -46px rgb(24 9 9);
+}
+section.godiva-header img{
+  width: 50%;
+  max-width: 450px;
+  background-color: #3c1c0d;
+    padding: 50px;
+    border-top: 5px solid #cfb56a;
+    border-bottom: 5px solid #cfb56a;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 36px -8px rgb(0 0 0);
+            box-shadow: 0px 0px 36px -8px rgb(0 0 0);
+}
+article.godiva-swiper-container{
+  margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    margin:20px 0px 50px 0px;
+    z-index: 1;
+    width: 80%;
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+section.godiva-swiper h1.godiva-swiper-title{
+  background: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin: 20px auto 0;
+  padding: 0;
+  font-size: 2.5em;
+  position: relative;
+  top: 15px;
+  background: rgb(255,241,175);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255,241,175,1)), color-stop(50%, rgba(225,183,116,1)), to(rgba(200,149,83,1)));
+  background: -o-linear-gradient(left, rgba(255,241,175,1) 0%, rgba(225,183,116,1) 50%, rgba(200,149,83,1) 100%);
+  background: linear-gradient(90deg, rgba(255,241,175,1) 0%, rgba(225,183,116,1) 50%, rgba(200,149,83,1) 100%);
+  color: #3d1d0e;
+  padding: 10px 30px;
+}
+section.godiva-swiper h2{
+  margin: 0 auto;
+}
+article.godiva-swiper-container-ie{
+  width: 100%;
+  margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+    list-style: none;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+article.godiva-swipe-product-info p.godiva-swipper-product-counter{
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+}
+article.godiva-swipe-product-info p.godiva-swipper-product-counter span{
+  font-weight: bold;
+}
+div.left-button, div.right-button {
+  opacity: 0.5;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-image: url('img/next.svg');
+  background-position: center;
+  background-size: cover;
+  z-index: 3;
+  -webkit-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+div.left-button{
+  cursor: pointer;
+  -webkit-transform: translate(10px,-50%) rotate(180deg);
+      -ms-transform: translate(10px,-50%) rotate(180deg);
+        transform: translate(10px,-50%) rotate(180deg);
+  left: 0;
+  top: 50%;
+}
+div.left-button:hover{
+  opacity: 1;
+  -webkit-transform: translate(10px,-50%) rotate(180deg) scale(1.1);
+      -ms-transform: translate(10px,-50%) rotate(180deg) scale(1.1);
+          transform: translate(10px,-50%) rotate(180deg) scale(1.1);
+}
+div.right-button:hover{
+  opacity: 1;
+  -webkit-transform: translate(-60px, -50%) scale(1.1);
+      -ms-transform: translate(-60px, -50%) scale(1.1);
+          transform: translate(-60px, -50%) scale(1.1);
+}
+div.right-button{
+  left:100%;
+  top: 50%;
+  cursor: pointer;
+  -webkit-transform: translate(-60px, -50%);
+      -ms-transform: translate(-60px, -50%);
+          transform: translate(-60px, -50%);
+}
+article.godiva-swiper-wrapper{
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+
+          -webkit-box-pack: center;
+
+              -ms-flex-pack: center;
+
+                  justify-content: center;
+
+          -webkit-box-sizing: content-box;
+
+                  box-sizing: content-box;
+  -webkit-transition: left 200ms ease-in-out;
+  -o-transition: left 200ms ease-in-out;
+  transition: left 200ms ease-in-out;
+}
+article.godiva-swiper-wrapper-ie{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  -webkit-transition: left 200ms ease-in-out;
+  -o-transition: left 200ms ease-in-out;
+  transition: left 200ms ease-in-out;
+  display: block;
+  margin: 50px 0px;
+}
+article.godiva-swipe-product-info{
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+article.godiva-swipe-product-info p{
+  text-align: center;
+}
+article.godiva-swipe-product-info p.godiva-swipe-product-info-prize{
+  padding-top: 0;
+  font-size: 1.5em;
+}
+p.godiva-swipe-product-info-prize-ie{
+  padding-top: 0;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+}
+article.godiva-swipe-product-info button{
+  background-color: #000;
+  color: white;
+  padding: 20px 50px;
+  font-size: 1.5em;
+}
+article.godiva-swipe-product-info button:hover{
+  -webkit-transform:scale(1.1) translateY(-5px);
+      -ms-transform:scale(1.1) translateY(-5px);
+          transform:scale(1.1) translateY(-5px);
+}
+div.default {
+  -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transform: scale(.5);
+      -ms-transform: scale(.5);
+          transform: scale(.5);
+  opacity: 0.5;
+  -webkit-transition: opacity 300ms ease-in-out,
+  -webkit-transform 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out,
+  -webkit-transform 300ms ease-in-out;
+  -o-transition: opacity 300ms ease-in-out,
+  transform 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out,
+  transform 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out,
+  transform 300ms ease-in-out,
+  -webkit-transform 300ms ease-in-out;
+  cursor: pointer;
+}
+div.default-ie {
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+div.default a{
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  pointer-events: none;
+}
+div.default img{
+  width: 100%;
+  -ms-flex-item-align: start;
+      -webkit-align-self: flex-start;
+          align-self: flex-start;
+}
+div.default-ie img{
+  width: 200px;
+  height: auto;
+}
+div.default-ie p{
+  text-align: center;
+}
+div.default-ie button{
+  background-color: #3d1d0e;
+  color: white;
+  padding: 20px 40px;
+  font-size: 1.3em;
+}
+div.focus {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-in-out,
+  -webkit-transform 300ms ease-in-out,
+  -webkit-filter 200ms ease-in-out;
+  transition: opacity 300ms ease-in-out,
+  -webkit-transform 300ms ease-in-out,
+  -webkit-filter 200ms ease-in-out;
+  -o-transition: opacity 300ms ease-in-out,
+  transform 300ms ease-in-out,
+  filter 200ms ease-in-out ;
+  transition: opacity 300ms ease-in-out,
+  transform 300ms ease-in-out,
+  filter 200ms ease-in-out ;
+  transition: opacity 300ms ease-in-out,
+  transform 300ms ease-in-out,
+  filter 200ms ease-in-out,
+  -webkit-transform 300ms ease-in-out,
+  -webkit-filter 200ms ease-in-out;
+}
+div.focus a{
+  pointer-events: all;
+}
+div.focus:hover {
+  -webkit-filter: brightness(1.3);
+          filter: brightness(1.3);
+}
+div.prev {
+  -webkit-transform: scale(0.7) translateX(-10%);
+      -ms-transform: scale(0.7) translateX(-10%);
+          transform: scale(0.7) translateX(-10%);
+  opacity: 0.7;
+  -webkit-transition: opacity 300ms ease-in-out,
+  -webkit-transform 300ms ease-in-out,
+  -webkit-filter 200ms ease-in-out;
+  transition: opacity 300ms ease-in-out,
+  -webkit-transform 300ms ease-in-out,
+  -webkit-filter 200ms ease-in-out;
+  -o-transition: opacity 300ms ease-in-out,
+  transform 300ms ease-in-out,
+  filter 200ms ease-in-out;
+  transition: opacity 300ms ease-in-out,
+  transform 300ms ease-in-out,
+  filter 200ms ease-in-out;
+  transition: opacity 300ms ease-in-out,
+  transform 300ms ease-in-out,
+  filter 200ms ease-in-out,
+  -webkit-transform 300ms ease-in-out,
+  -webkit-filter 200ms ease-in-out;
+}
+div.prev:hover {
+  -webkit-filter: brightness(1.3);
+          filter: brightness(1.3);
+}
+div.next {
+  -webkit-transform: scale(0.7) translateX(10%);
+      -ms-transform: scale(0.7) translateX(10%);
+          transform: scale(0.7) translateX(10%);
+  opacity: 0.7;
+  -webkit-transition: opacity 300ms ease-in-out,
+  -webkit-transform 300ms ease-in-out,
+  -webkit-filter 200ms ease-in-out;
+  transition: opacity 300ms ease-in-out,
+  -webkit-transform 300ms ease-in-out,
+  -webkit-filter 200ms ease-in-out;
+  -o-transition: opacity 300ms ease-in-out,
+  transform 300ms ease-in-out,
+  filter 200ms ease-in-out ;
+  transition: opacity 300ms ease-in-out,
+  transform 300ms ease-in-out,
+  filter 200ms ease-in-out ;
+  transition: opacity 300ms ease-in-out,
+  transform 300ms ease-in-out,
+  filter 200ms ease-in-out,
+  -webkit-transform 300ms ease-in-out,
+  -webkit-filter 200ms ease-in-out;
+}
+div.next:hover {
+  -webkit-filter: brightness(1.3);
+          filter: brightness(1.3);
+}
+section.godiva-history{
+  position: relative;
+  padding-top: 40px;
+}
+section.godiva-history h2{
+  margin: 0;
+}
+
+article.godiva-history-ctnt{
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #3d1d0e;
+  width: 100%;
+  padding: 30px 0px;
+}
+
+article.godiva-history-ctnt p{
+  max-width: 1200px;
+  width: 75%;
+  color: white;
+}
+
+article.godiva-history-ctnt p span{
+  color:  #3d1d0e;
+  background-color:#f8e7b7;
+  padding: 3px;
+}
+
+article.godiva-history-ctnt.bottom-content{
+  background: transparent;
+}
+article.godiva-history-ctnt.bottom-content p{
+  background: transparent;
+  color: #3d1d0e;
+}
+article.godiva-history-ctnt.bottom-content p span{
+  color: #f8e7b7;
+  background-color: #3d1d0e;
+  padding: 3px;
+}
+section.godiva-banner 
+article.godiva-banner-container{
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: #ffe097;
+  height: auto;
+  min-height: 300px;
+  background-image: url("img/bullmet-navidad-godiva.png");
+  background-repeat: no-repeat;
+  background-position: 300px;
+  background-size: cover;
+  -webkit-box-shadow: inset 0px -32px 56px -62px rgb(125 71 59);
+          box-shadow: inset 0px -32px 56px -62px rgb(125 71 59);
+}
+section.godiva-banner
+article.godiva-banner-container
+div.godiva-banner-wrapper
+{
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 0px;
+  position: relative;
+  margin: 30px;
+
+}
+section.godiva-banner
+article.godiva-banner-container
+div.godiva-banner-wrapper
+div.godiva-banner-item
+{
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 0px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+section.godiva-banner
+article.godiva-banner-container
+div.godiva-banner-wrapper
+h1{
+  font-size: 3em;
+  color: #3c1f1e;
+  text-align: left;
+  text-shadow: 3px 1px 1px #f8e7b7;
+  margin: 30px 0px;
+  background-color: transparent;
+  padding: 0px;
+  display: block;
+}
+section.godiva-banner
+article.godiva-banner-container
+div.godiva-banner-wrapper
+h3{
+  color: black;
+  text-align: left;
+  text-shadow: 3px 1px 1px #f8e7b7;
+  font-size: 1.3em;
+    margin: 0px 0px 30px 0px;
+    background-color: transparent;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+
+}
+section.godiva-banner
+article.godiva-banner-container
+div.godiva-banner-wrapper
+a{
+  margin: 10px 0px;
+  padding: 20px;
+  font-size: 1.3em;
+  background-color:#fb8c1c;
+  color:black;
+  position: relative;
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  font-weight: bold;
+}
+section.godiva-banner
+article.godiva-banner-container
+div.godiva-banner-wrapper
+img{
+  max-width: 200px;
+}
+section.godiva-banner
+article.godiva-banner-container
+div.godiva-banner-wrapper
+a:hover{
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+section.godiva-footer {
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  background: #3c1c0d;
+  border-top: 5px solid #cfb56a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+section.godiva-footer img{
+  height: 40px;
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+section.godiva-footer p{
+  position: relative;
+text-align: center;
+padding: 0px 20px;
+color: #cfb56a;
+font-size: 0.7em;
+}
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #333;
+  padding: 50px 0px;
+}
+footer p{
+  color: white;
+  font-size: 0.8em;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  width: 75%;
+}
+footer img{
+  width: 120px;
+}
+@media (min-width:1000px) {
+  section.godiva-banner 
+  article.godiva-banner-container{
+    background-position: 90%;
+    background-size: 50%;
+  }
+}
+
+@media (max-width: 950px) {
+
+  section.godiva-header{
+    height: 75vh;
+    background-size: cover;
+  }
+  section.godiva-header img{
+    width: 90%;
+    max-width: 300px;
+  }
+  section.godiva-swiper h1.godiva-swiper-title{
+    font-size: 3em;
+    top:20px;
+  }
+
+}
+
+@media (max-width: 780px) {
+  h1, h2 {
+    font-size: 1.3em;
+    min-width: 250px;
+  }
+  p {
+    font-size: 1em;
+  }
+  div.left-button, div.right-button{
+    display: none;
+  }
+  article {
+    width: 100%;
+  }
+  section.godiva-header{
+    height: 50vh;
+    background-size: cover;
+  }
+  article.godiva-swiper-container {
+    width: 100%;
+}
+  section.godiva-swiper h1.godiva-swiper-title{
+    font-size: 2em;
+    top:18px;
+  }
+  article.godiva-history-ctnt p{
+    width: 90%;
+  }
+
+  section.godiva-banner 
+  article.godiva-banner-container{
+    background-position: 200px;
+    background-size: 100%;
+  }
+  
+  article.godiva-swiper-wrapper {
+    margin: 40px;
+}
+  div.focus{
+    -webkit-transform: scale(1.7);
+        -ms-transform: scale(1.7);
+            transform: scale(1.7);
+  }
+
+}
+@media (max-width: 500px) {
+  section.godiva-banner 
+  article.godiva-banner-container{
+    background-position: 100px;
+    background-size: 200%;
+  }
+
+  article.godiva-swiper-wrapper {
+    margin: 40px;
+}
+div.focus{
+  -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2);
+}
+}
+  .animation-start-app {
+  -webkit-animation: start-app 1s forwards;
+          animation: start-app 1s forwards;
+}
+@-webkit-keyframes start-app {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes start-app {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+.animation-showleft {
+  position: absolute;
+  -webkit-animation: showleft 2s forwards;
+          animation: showleft 2s forwards;
+          -webkit-transform:translateX(-50%);
+              -ms-transform:translateX(-50%);
+                  transform:translateX(-50%);
+}
+@-webkit-keyframes showleft {
+  0%   { opacity: 0; left:0; }
+  50%   { opacity: 0; left:25%; }
+  100% { opacity: 1; left:50%; }
+}
+@keyframes showleft {
+  0%   { opacity: 0; left:0; }
+  50%   { opacity: 0; left:25%; }
+  100% { opacity: 1; left:50%; }
+}
