@@ -31,8 +31,11 @@ body {
 h1, h2{
   font-size: 1.5em;
   margin: 30px auto;
-  color: white;
-  background-color: #3d1d0e;
+  color:#000;
+  background: rgb(255,241,175);
+  background: -o-linear-gradient(left, rgba(255,241,175,1) 0%, rgba(225,183,116,1) 50%, rgba(200,149,83,1) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255,241,175,1)), color-stop(50%, rgba(225,183,116,1)), to(rgba(200,149,83,1)));
+  background: linear-gradient(90deg, rgba(255,241,175,1) 0%, rgba(225,183,116,1) 50%, rgba(200,149,83,1) 100%);
   padding:20px 30px;
   font-family: 'Montserrat', sans-serif;
   display: table;
@@ -144,10 +147,9 @@ article {
 }
 section.godiva-header{
   height: 75vh;
-  background-position: center;
   background-image: url("img/godiva-background-chocolate.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -202,8 +204,8 @@ section.godiva-swiper h1.godiva-swiper-title{
   position: relative;
   top: 15px;
   background: rgb(255,241,175);
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255,241,175,1)), color-stop(50%, rgba(225,183,116,1)), to(rgba(200,149,83,1)));
   background: -o-linear-gradient(left, rgba(255,241,175,1) 0%, rgba(225,183,116,1) 50%, rgba(200,149,83,1) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255,241,175,1)), color-stop(50%, rgba(225,183,116,1)), to(rgba(200,149,83,1)));
   background: linear-gradient(90deg, rgba(255,241,175,1) 0%, rgba(225,183,116,1) 50%, rgba(200,149,83,1) 100%);
   color: #3d1d0e;
   padding: 10px 30px;
@@ -331,8 +333,9 @@ p.godiva-swipe-product-info-prize-ie{
   text-decoration: none;
 }
 article.godiva-swipe-product-info button{
-  background-color: #000;
-  color: white;
+  background-color: transparent;
+  color:#3d1d0e;
+  border: 1px solid #3d1d0e;
   padding: 20px 50px;
   font-size: 1.5em;
 }
@@ -530,10 +533,10 @@ article.godiva-banner-container{
   position: relative;
   background-color: #ffe097;
   height: auto;
-  min-height: 300px;
-  background-image: url("img/bullmet-navidad-godiva.png");
+  min-height: 360px;
+  background-image: url("img/godiva-chocolate-banner.jpg");
   background-repeat: no-repeat;
-  background-position: 300px;
+  background-position: center;
   background-size: cover;
   -webkit-box-shadow: inset 0px -32px 56px -62px rgb(125 71 59);
           box-shadow: inset 0px -32px 56px -62px rgb(125 71 59);
@@ -635,7 +638,7 @@ a:hover{
       -ms-transform: scale(1);
           transform: scale(1);
 }
-section.godiva-footer {
+footer.godiva-footer {
   width: 100%;
   padding: 20px 0px 20px 0px;
   position: relative;
@@ -652,56 +655,23 @@ section.godiva-footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
 }
-section.godiva-footer img{
+footer.godiva-footer img{
   height: 40px;
   position: relative;
   display: block;
   margin-bottom: 20px;
 }
-section.godiva-footer p{
+footer.godiva-footer p{
   position: relative;
 text-align: center;
 padding: 0px 20px;
 color: #cfb56a;
 font-size: 0.7em;
-}
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  margin: 0 auto;
-  background-color: #333;
-  padding: 50px 0px;
-}
-footer p{
-  color: white;
-  font-size: 0.8em;
-  padding: 0px;
-  margin: 0px;
-  text-align: center;
-  width: 75%;
-}
-footer img{
-  width: 120px;
-}
-@media (min-width:1000px) {
-  section.godiva-banner 
-  article.godiva-banner-container{
-    background-position: 90%;
-    background-size: 50%;
-  }
 }
 
 @media (max-width: 950px) {
@@ -752,8 +722,7 @@ footer img{
 
   section.godiva-banner 
   article.godiva-banner-container{
-    background-position: 200px;
-    background-size: 100%;
+    background-position: 25%;
   }
   
   article.godiva-swiper-wrapper {
@@ -767,10 +736,8 @@ footer img{
 
 }
 @media (max-width: 500px) {
-  section.godiva-banner 
-  article.godiva-banner-container{
-    background-position: 100px;
-    background-size: 200%;
+  section.godiva-header{
+    background-position: 85%;
   }
 
   article.godiva-swiper-wrapper {
